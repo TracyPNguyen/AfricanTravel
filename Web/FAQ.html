@@ -22,115 +22,439 @@
     margin-right: auto;
     margin-left: auto;
 }
+
 .bgColor {
-  background-color: rgb(226, 224, 224)
+  background-color: rgb(240, 240, 240);
+}
+.bgColorWhite {
+  background-color: white;
+}
+li.text_color
+{
+  color: white;
+}
+.navbarColor {
+  background-color: white;
+  color: rgba(71, 18, 1, 0.849);
+}
+<!--
+  -->                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+  .view-content {
+    clear: both;
+}
+div.text_align_center
+{
+  text-align: center;
 }
 
+div.align_center
+{
+  align-content: center;
+}
+.tour-preview {
+    padding: 0;
+    margin-left: .5%;
+    margin-right: .5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    text-align: left;
+    background: #fff;
+    position: relative;
+    vertical-align: bottom;
+    font-size: 90%;
+    font-family: open sans,Arial,Helvetica,sans-serif;
+}
+
+.tour-preview .tour-title {
+    font-weight: 400;
+    position: absolute;
+    overflow: hidden;
+    margin: 0;
+    font-size: .9em;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 1;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+.field-content:hover {
+  -ms-transform: scale(1.05); /* IE 9 */
+  -webkit-transform: scale(1.05); /* Safari 3-8 */
+  transform: scale(1.05);
+}
+.navbar-nav li:hover>.dropdown-menu {
+  display: block;
+}
 </style>
 </head>
 
 <body class="bgColor" style="height:1500px;">
 
-  <nav class="navbar navbar-fixed-top">
-    <div id="navbar">
-      <nav class="navbar navbar-default navbar-static-top" role="navigation">
-        <div class="navbar-header bgColor" >
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          </button>
-          <a href="Home.html" title=""><img src="./Images/logo.png" href="http:\\google.com" /></a>
-        </div>
-        <div class="collapse navbar-collapse" id="navbar-collapse-1" style="background-color: rgba(71, 18, 1, 0.849)">
-          <ul class="nav navbar-nav">
-            <!-- <li class="active"><a href="#">Active Link</a></li> -->
-            <li><a href="Home.html">HOME</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">DESTINATIONS <b class="caret"></b></a> 
-              <ul class="dropdown-menu">
-                <li class="kopie"><a href="#">Dropdown</a></li>
-                <li><a href="#">Dropdown Link 1</a></li>
-                <li class="active"><a href="#">Dropdown Link 2</a></li>
-                <li><a href="#">Dropdown Link 3</a></li>
-                <li class="dropdown dropdown-submenu">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown Link 4</a>
-                  <ul class="dropdown-menu">
-                    <li class="kopie"><a href="#">Dropdown Link 4</a></li>
-                    <li><a href="#">Dropdown Submenu Link 4.1</a></li>
-                    <li><a href="#">Dropdown Submenu Link 4.2</a></li>
-                    <li><a href="#">Dropdown Submenu Link 4.3</a></li>
-                    <li><a href="#">Dropdown Submenu Link 4.4</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown dropdown-submenu">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown Link 5</a>
-                  <ul class="dropdown-menu">
-                    <li class="kopie"><a href="#">Dropdown Link 5</a></li>
-                    <li><a href="#">Dropdown Submenu Link 5.1</a></li>
-                    <li><a href="#">Dropdown Submenu Link 5.2</a></li>
-                    <li><a href="#">Dropdown Submenu Link 5.3</a></li>
-                    <li class="dropdown dropdown-submenu">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown Submenu Link 5.4</a>
-                      <ul class="dropdown-menu">
-                        <li class="kopie"><a href="#">Dropdown Submenu Link 5.4</a></li>
-                        <li><a href="#">Dropdown Submenu Link 5.4.1</a></li>
-                        <li><a href="#">Dropdown Submenu Link 5.4.2</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">SAFARIS<b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li class="kopie"><a href="#">Dropdown2</a></li>
-                <li><a href="#">Dropdown2 Link 1</a></li>
-                <li><a href="#">Dropdown2 Link 2</a></li>
-                <li><a href="#">Dropdown2 Link 3</a></li>
-                <li class="dropdown dropdown-submenu">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown2 Link 4</a>
-                  <ul class="dropdown-menu">
-                    <li class="kopie"><a href="#">Dropdown2 Link 4</a></li>
-                    <li><a href="#">Dropdown2 Submenu Link 4.1</a></li>
-                    <li><a href="#">Dropdown2 Submenu Link 4.2</a></li>
-                    <li><a href="#">Dropdown2 Submenu Link 4.3</a></li>
-                    <li><a href="#">Dropdown2 Submenu Link 4.4</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown dropdown-submenu">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown2 Link 5</a>
-                  <ul class="dropdown-menu">
-                    <li class="kopie"><a href="#">Dropdown Link 5</a></li>
-                    <li><a href="#">Dropdown2 Submenu Link 5.1</a></li>
-                    <li><a href="#">Dropdown2 Submenu Link 5.2</a></li>
-                    <li><a href="#">Dropdown2 Submenu Link 5.3</a></li>
-                    <li class="dropdown dropdown-submenu">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown Submenu Link 5.4</a>
-                      <ul class="dropdown-menu">
-                        <li class="kopie"><a href="#">Dropdown2 Submenu Link 5.4</a></li>
-                        <li><a href="#">Dropdown2 Submenu Link 5.4.1</a></li>
-                        <li><a href="#">Dropdown2 Submenu Link 5.4.2</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li><a href="About.html">ABOUT</a></li>
-          </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-      </nav>
-    </div>
-  </nav>
 
-  <div class="container_carousel" style="margin-top:50px">  
-    FAQ
+    <nav class="navbar navbar-fixed-top">
+        <div id="navbar">
+          <nav class="navbar navbar-default navbar-static-top" role="navigation">
+            <div class="navbar-header bgColorWhite" >
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              </button>
+              <a href="Home.html" title="Home page"><img src="./Images/african_Travel.jpg" style="width:200px;height:70px"/></a>
+            </div>
+            <div class="collapse navbar-collapse navbarColor" id="navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                      <!-- <li ><a href="Home.html" style="color:white;">HOME</a></li> -->
+                <li style="margin-top:10px; width:150px;"></li>
+                <li class="dropdown" style="margin-top:10px; text-align: right; ">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:rgba(37, 6, 6, 0.904);">DESTINATIONS<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li class="kopie"><a href="Kenya.html">Kenya</a></li>
+                      <li class="kopie"><a href="Tanzania.html">Tanzania</a></li>
+                      <li class="kopie"><a href="Zanzibar.html">Zanzibar</a></li>
+                    </ul>
+                  </li>
+                <li class="dropdown" style="margin-top:10px">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:rgba(37, 6, 6, 0.904);"> SAFARIS<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li class="kopie"><a href="#">07 - Days Karibu Kenya</a></li>
+                    <li class="kopie"><a href="#">08 - Days Samburu/Mara</a></li>
+                    <li class="kopie"><a href="#">08 - Days Tanzania Classic</a></li>
+                    <li class="kopie"><a href="#">09 - Days Savannah & Beach</a></li>
+                    <li class="kopie"><a href="#">09 - Days Wings over Kenya</a></li>
+                    <li class="kopie"><a href="#">10 - Days Treasures of Africa Kenya & Tanzania</a></li>
+                    <li class="kopie"><a href="#">12 - Days Kenya & Tanzania</a></li>
+                  </ul>
+                </li>
+                <li style="margin-top:10px"><a href="FAQ.html"  style="color:rgba(37, 6, 6, 0.904);">FAQ</a></li>
+                <li style="margin-top:10px"><a href="About.html" style="color:rgba(37, 6, 6, 0.904);">ABOUT US</a></li>
+                <li style="margin-top:10px"><a href="TravelReviews.html" style="color:rgba(37, 6, 6, 0.904);">REVIEWS</a></li>
+                <li style="margin-top:10px"><a href="Login.html"  style="color:rgba(37, 6, 6, 0.904);">AGENT LOGIN</a></li>
+                <li style="vertical-align: bottom; margin-top: 20px;"><img style="width:100px; height:30px;" src="./Images/Homepage/InquireNow.jpg" href="InquireNow.html" ></img></li>
+                <li style="vertical-align: bottom; margin-top: 20px; width: 50px; text-align: right;"><img style="width:30px; height:30px;"src="./Images/search.jpg" href="Search.html" ></img></li>
+              </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+          </nav>
+        </div>
+      </nav>
+
+  <div class="container_carousel" style="margin-top:100px;">  
   </div>
-  <h1>FAQ</h1>
+  <h2>FAQ</h2>
+  <div style="margin-left: 100px;">
+  <div class="panel panel-default" >
+      <div class="panel-heading" role="tab" id="heading-1">
+        <h4 class="panel-title panel-title--no-left-padding">
+          <a data-toggle="collapse" data-parent="#faq" href="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
+            <strong>When is the best time of year to visit Kenya and Tanzania?</strong>
+          </a>
+        </h4>
+      </div>
+      <div id="collapse-1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-1">
+        <p>Kenya and Tanzania are great year-round destinations. July through August and the month of December are the busiest times in Kenya and Tanzania. Lodges and parks can be crowded with tourists and reservations often must be made six, eight, even nine months in advance. July and August also happen to be the best time to catch the wildebeest in the Maasai Mara.</p>
+        <p>Seasonal rains hit hardest from March to May (with lighter rains falling October to December). During these months things are much quieter – lodges and camps generally have rooms available and prices may decrease. The rains generally don’t affect travelers’ ability to get around, though the tracks within the parks, particularly Amboseli, can become muddy and rutted.</p>
+        <p>January and February are wonderful months to visit East Africa since the hot, dry weather is considered by many to be East Africa’s most pleasant. It’s also the time of year when bird life flocks to the Rift Valley lakes in the greatest numbers, attracting bird-watchers from around the globe.</p>
+      </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="heading-2">
+          <h4 class="panel-title panel-title--no-left-padding">
+            <a data-toggle="collapse" data-parent="#faq" href="#collapse-2" aria-expanded="false" aria-controls="collapse-1">
+              <strong>What is the weather like in Kenya and Tanzania?</strong>
+            </a>
+          </h4>
+        </div>
+        <div id="collapse-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-2">
+          <p>Kenya straddles the equator, and Tanzania is not far south, so both countries enjoy a tropical climate. The coasts are hot and humid, while the inland areas are generally temperate (due to the altitude). The northern parts of Kenya are very hot and dry. The average annual temperature in Nairobi (altitude 4,980 feet) is 77°F maximum and 56°F minimum. The coastal town of Mombasa (altitude 50 feet) is 86oF maximum and 73oF minimum.</p>
+          <p>There is plenty of sunshine throughout the year and summer clothes are appropriate year round. Nights and mornings can be quite cool. The long rains occur from March to May and short rains occur November and December. The rainfall is sometimes heavy and when it does come it often falls in the afternoons and evenings. The hottest period is from February to March and coolest is July to August.</p>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="heading-3">
+          <h4 class="panel-title panel-title--no-left-padding">
+            <a data-toggle="collapse" data-parent="#faq" href="#collapse-3" aria-expanded="false" aria-controls="collapse-1">
+              <strong>Is it safe to travel to Kenya and Tanzania?</strong>
+            </a>
+          </h4>
+        </div>
+        <div id="collapse-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-3">
+          <p>Kenya straddles the equator, and Tanzania is not far south, so both countries enjoy a tropical climate. The coasts are hot and humid, while the inland areas are generally temperate (due to the altitude). The northern parts of Kenya are very hot and dry. The average annual temperature in Nairobi (altitude 4,980 feet) is 77°F maximum and 56°F minimum. The coastal town of Mombasa (altitude 50 feet) is 86oF maximum and 73oF minimum.The US State Department issued Travel Warnings for both Kenya and Tanzania following the 1998 embassy bombings in Nairobi and Dar es Salaam. A Travel Warning remains in effect for Kenya as of May 2005. Nevertheless, tourism in East Africa hit record numbers in 2004, with no reports in recent years of threats to tourists in the popular game reserves or on the roads between them. Tourism is critical to the economies of East Africa, and both governments are committed to ensuring the safety of tourists in the parks and on the roads. People and property are safe in the parks and while traveling with established tour operators. Visitors can relax and enjoy the landscape, the wildlife, and the people.</p>
+          <p>As with all international travel, visitors should remain aware of their surroundings. This is true of East Africa, particularly outside the parks and away from the safari minivan. Kenya and Tanzania are developing countries, each with pockets of poverty and desperation, and western tourists can be attractive targets. Travelers are advised to follow common sense security practices while in the cities and on the roads (do not carry lots of cash; refrain from ostentation in dress; keep jewelry and valuables in the hotel safe; do not roam city streets alone at night).</p>
+          <p>The US State department offers travelers extensive personal security advice while abroad (click here), including tips on what to pack, what to leave behind, what to do in case of an emergency, and how to contact the local embassy or consular office.</p>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="heading-4">
+          <h4 class="panel-title panel-title--no-left-padding">
+            <a data-toggle="collapse" data-parent="#faq" href="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+              <strong>When does the famous wildebeest migration take place?</strong>
+            </a>
+          </h4>
+        </div>
+        <div id="collapse-4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-4">
+          <p>Always; the annual wildebeest migration never ends. The herds roam the grasslands and rolling hills of Tanzania and Kenya in a great counter-clockwise loop. Their travels carry them from their breeding grounds in the southern reaches of Serengeti National Park in Tanzania to their summer foraging grounds in Kenya’s Maasai Mara Reserve and back again, over and over. The massive herds, nearly two million wildebeest, zebras, antelopes, and gazelles, generally begin crossing the Mara River into Kenya and the Mara Triangle in late July and begin the return march in late September. During the rest of the year, the herd can be seen in different parts of the massive Serengeti National Park.</p>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="heading-5">
+          <h4 class="panel-title panel-title--no-left-padding">
+            <a data-toggle="collapse" data-parent="#faq" href="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
+              <strong>Where can I learn more about East Africa?</strong>
+            </a>
+          </h4>
+        </div>
+        <div id="collapse-5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-5">
+          <p>First of all, continue browsing ToKenya.com. We’ve included a lot of relevant information in our description of destinations and lodges. We think Lonely Planet produces good travel guides, and their guide to East Africa is no exception. Ernest Hemingway’s The Green Hills of Africa, an account of his hunting safari on the Serengeti in the early 1930s, remains East Africa’s classic travelogue.</p>
+          <p>Online, the tourism agencies of both nations provide worthwhile information for travelers as well as links to more detailed sources (for Kenya, and for Tanzania). The Kenya Wildlife Service is charged with protecting and securing the country’s natural gifts. Their website is filled with information about the flora and fauna found in the parks and reserves.</p>
+      
+        </div>
+      </div>
+      
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="heading-6">
+          <h4 class="panel-title panel-title--no-left-padding">
+            <a data-toggle="collapse" data-parent="#faq" href="#collapse-6" aria-expanded="false" aria-controls="collapse-6">
+              <strong>I'm a single traveler. Can I go on safari with ToKenya.com?</strong>
+            </a>
+          </h4>
+        </div>
+        <div id="collapse-6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-6">
+          <p>ToKenya.com safaris require a minimum of two travelers.</p>
+        </div>
+      </div>
+      
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="heading-7">
+          <h4 class="panel-title panel-title--no-left-padding">
+            <a data-toggle="collapse" data-parent="#faq" href="#collapse-7" aria-expanded="false" aria-controls="collapse-7">
+              <strong>How many other people will be on the safari?</strong>
+            </a>
+          </h4>
+        </div>
+        <div id="collapse-7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-7">
+          <p>Only members of your group will be on safari with you. We do not offer safaris to solo travelers. Groups must consist of a minimum of two travelers. Minivans and 4x4 Safari Land Cruisers carry a maximum of six passengers.</p>
+        </div>
+      </div>
+      
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="heading-8">
+          <h4 class="panel-title panel-title--no-left-padding">
+            <a data-toggle="collapse" data-parent="#faq" href="#collapse-8" aria-expanded="false" aria-controls="collapse-8">
+              <strong>What shots do I need before I travel?</strong>
+            </a>
+          </h4>
+        </div>
+        <div id="collapse-8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-8">
+          <p>The Kenyan government only requires immunization against yellow fever. However, in addition, we strongly recommend immunization against malaria. Be sure to consult your family doctor and ask if he or she recommends any additional immunizations or shots for you or your family. For detailed, up-to-the-minute information on immunizations, shots, and health and safety advisories for travelers, visit the Centers for Disease Control Traveler’s Health website.</p>
+        </div>
+      </div>
+      
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="heading-9">
+          <h4 class="panel-title panel-title--no-left-padding">
+            <a data-toggle="collapse" data-parent="#faq" href="#collapse-9" aria-expanded="false" aria-controls="collapse-9">
+              <strong>Should I bring my children to Kenya? Is it safe for them?</strong>
+            </a>
+          </h4>
+        </div>
+        <div id="collapse-9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-9">
+          <p>Tanzania and Kenya are terrific destinations for families and a safari is an amazing experience to share with children, particularly those who are already enchanted by Africa and its wildlife. If you're considering taking young children, however, you should ask yourself if both you and your child can deal with the… complications of travel. For children, especially young children, Kenya and Tanzania can be a mixture of fun (the pool, the beach, playing with other kids) and tedium (the 17+ hour flight, the sometimes long game drives, the need to be well-behaved while dining in restaurants). Also, be sure to speak with your doctor about any health-related concerns related to bringing your child to Africa.</p>
+        </div>
+      </div>
+      
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="heading-10">
+          <h4 class="panel-title panel-title--no-left-padding">
+            <a data-toggle="collapse" data-parent="#faq" href="#collapse-10" aria-expanded="false" aria-controls="collapse-10">
+              <strong>How many hours does the flight to Kenya/Tanzania take from the United States?</strong>
+            </a>
+          </h4>
+        </div>
+        <div id="collapse-10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-10">
+          <p>Most flights from the United States stop in London or Amsterdam on their way to Nairobi, Kenya. A flight from New York to Amsterdam/London is seven hours or so. Amsterdam/London to Nairobi/Kilimanjaro is eight-and-a-half-hours. Total flight time with no layovers is fifteen to sixteen hours.</p>
+        </div>
+      </div>
+      
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="heading-11">
+          <h4 class="panel-title panel-title--no-left-padding">
+            <a data-toggle="collapse" data-parent="#faq" href="#collapse-11" aria-expanded="false" aria-controls="collapse-11">
+              <strong>Do I need a visa?</strong>
+            </a>
+          </h4>
+        </div>
+        <div id="collapse-11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-11">
+          <p>A visa is required to enter both Tanzania and Kenya. You can obtain a visa at the airport, upon arrival, or in advance from the Kenyan or Tanzanian embassy. Visit www.kenyaembassy.com or www.tanzaniaembassy-us.org for details.</p>
+        </div>
+      </div>
+      
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="heading-12">
+          <h4 class="panel-title panel-title--no-left-padding">
+            <a data-toggle="collapse" data-parent="#faq" href="#collapse-12" aria-expanded="false" aria-controls="collapse-12">
+              <strong>Do I have to pay a departure tax at the airport?</strong>
+            </a>
+          </h4>
+        </div>
+        <div id="collapse-12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-12">
+          <p>Like most international destinations, Tanzania and Kenya charge an airport departure tax for all international flights. The tax of $50 may or may not be included in the airline ticket price; confirm with your airline. If it is not included, visitors must pay the tax in cash at the airport upon arrival. Departure taxes can be paid in local currency or US dollars.</p>
+        </div>
+      </div>
+      
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="heading-13">
+          <h4 class="panel-title panel-title--no-left-padding">
+            <a data-toggle="collapse" data-parent="#faq" href="#collapse-13" aria-expanded="false" aria-controls="collapse-13">
+              <strong>Is tipping required in Tanzania and Kenya?</strong>
+            </a>
+          </h4>
+        </div>
+        <div id="collapse-13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-13">
+          <p>Most major hotels and restaurants include a service charge in the price of the service. Tipping is not obligatory and is entirely at your discretion. Porters at airports, hotels or lodges may be tipped $1.00 per piece of baggage. A gratuity of 10% is customary at restaurants and bars where a service charge is not included.</p>
+        </div>
+      </div>
+      
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="heading-14">
+          <h4 class="panel-title panel-title--no-left-padding">
+            <a data-toggle="collapse" data-parent="#faq" href="#collapse-14" aria-expanded="false" aria-controls="collapse-14">
+              <strong>Is tipping required in Tanzania and Kenya?</strong>
+            </a>
+          </h4>
+        </div>
+        <div id="collapse-14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-14">
+          <p>Most major hotels and restaurants include a service charge in the price of the service. Tipping is not obligatory and is entirely at your discretion. Porters at airports, hotels or lodges may be tipped $1.00 per piece of baggage. A gratuity of 10% is customary at restaurants and bars where a service charge is not included.</p>
+          <p>Note that on safaris, tips are considered part of a guide/driver’s pay. A tip for your guide of $12.00 to $15.00 per person per day is appropriate.</p>
+      
+        </div>
+      </div>
+      
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="heading-15">
+          <h4 class="panel-title panel-title--no-left-padding">
+            <a data-toggle="collapse" data-parent="#faq" href="#collapse-15" aria-expanded="false" aria-controls="collapse-15">
+              <strong>What currency do they use in Kenya? Tanzania?</strong>
+            </a>
+          </h4>
+        </div>
+        <div id="collapse-15" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-15">
+          <p>Kenyan Shilling (KSH) and Tanzanian Shilling (TSH). US dollars are widely accepted. In fact, guides and service staff prefer to receive gratuities in US dollars.</p>
+        </div>
+      </div>
+      
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="heading-16">
+          <h4 class="panel-title panel-title--no-left-padding">
+            <a data-toggle="collapse" data-parent="#faq" href="#collapse-16" aria-expanded="false" aria-controls="collapse-16">
+              <strong>Will I be able to use my electrical equipment while on safari?</strong>
+            </a>
+          </h4>
+        </div>
+        <div id="collapse-16" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-16">
+          <p>The local electricity supply is 220/240 volts AC, 50HZ. Plugs are 3 point square. North American travelers planning to bring their 110/120 volt video camera chargers or other electrical devices should also bring voltage and socket adapters. Major hotels usually provide hair dryers, irons and other small electric appliances upon request.</p>
+        </div>
+      </div>
+      
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="heading-17">
+          <h4 class="panel-title panel-title--no-left-padding">
+            <a data-toggle="collapse" data-parent="#faq" href="#collapse-17" aria-expanded="false" aria-controls="collapse-17">
+              <strong>Will my cell phone work in East Africa?</strong>
+            </a>
+          </h4>
+        </div>
+        <div id="collapse-17" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-17">
+          <p>If your cell phone is GSM compatible, your phone will connect to Kenya’s cellular system. Service in the cities and near major roads is generally reliable. Service is spotty elsewhere.</p>
+          <p>Those with GSM compatible phones that employ “swappable” SIM cards should consider purchasing a pre-paid SIM card which converts the phone to a local service account. This is a much more affordable option than paying roaming charges and international rates on your home cellular account.</p>
+      
+        </div>
+      </div>
+      
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="heading-18">
+          <h4 class="panel-title panel-title--no-left-padding">
+            <a data-toggle="collapse" data-parent="#faq" href="#collapse-18" aria-expanded="false" aria-controls="collapse-18">
+              <strong>Do people speak English in Tanzania and Kenya?</strong>
+            </a>
+          </h4>
+        </div>
+        <div id="collapse-18" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-18">
+          <p>English is the “language of communication” in Tanzania and Kenya. It is widely spoken in hotels, restaurants, and visitor establishments.</p>
+          <p>Swahili is the national language in both Tanzania and Kenya, and a little Swahili goes a long way. Try to learn a little before your trip, and try top pick up a little more while on safari. Don’t worry about your accent; the locals are thrilled to hear visitors attempt to use any Swahili at all. To get you started, “jambo” means hello. You’ll be hearing it often.</p>
+      
+        </div>
+      </div>
+      
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="heading-19">
+          <h4 class="panel-title panel-title--no-left-padding">
+            <a data-toggle="collapse" data-parent="#faq" href="#collapse-19" aria-expanded="false" aria-controls="collapse-19">
+              <strong>What are the accommodations like?</strong>
+            </a>
+          </h4>
+        </div>
+        <div id="collapse-19" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-19">
+          <p>The best way to learn more about our camps and lodges is to review the detailed day-to-day itineraries. Each day on the itinerary includes a link to a detailed description of the lodge or camp – just click on the link to learn more. Lodges and camps range from simple and clean to elegant and refined.</p>
+        </div>
+      </div>
+      
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="heading-20">
+          <h4 class="panel-title panel-title--no-left-padding">
+            <a data-toggle="collapse" data-parent="#faq" href="#collapse-20" aria-expanded="false" aria-controls="collapse-20">
+              <strong>What are the meals like?</strong>
+            </a>
+          </h4>
+        </div>
+        <div id="collapse-20" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-20">
+          <p>Meals (generally breakfast, lunch, and dinner) are primarily European style buffets with African influences. Click here for more details.</p>
+        </div>
+      </div>
+      
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="heading-21">
+          <h4 class="panel-title panel-title--no-left-padding">
+            <a data-toggle="collapse" data-parent="#faq" href="#collapse-21" aria-expanded="false" aria-controls="collapse-21">
+              <strong>What kind of vehicle will we be traveling in?</strong>
+            </a>
+          </h4>
+        </div>
+        <div id="collapse-21" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-21">
+          <p>Our classic safari vehicle is a purpose built six-seat minivan specially designed for the terrain. It comes complete with a pop-up roof for easy game viewing and plenty of windows for unobstructed views of the landscape. Four-wheel drive vehicles are also available. Click here for more details.</p>
+        </div>
+      </div>
+      
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="heading-21">
+          <h4 class="panel-title panel-title--no-left-padding">
+            <a data-toggle="collapse" data-parent="#faq" href="#collapse-21" aria-expanded="false" aria-controls="collapse-21">
+              <strong>What if I have a question that isn’t answered here?</strong>
+            </a>
+          </h4>
+        </div>
+        <div id="collapse-21" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-21">
+          <p>Send an email with your query to Safarisl@Tokenya.com. We’ll be happy to answer any questions you might have about traveling to East Africa.</p>
+        </div>
+      </div>
+      
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="heading-22">
+          <h4 class="panel-title panel-title--no-left-padding">
+            <a data-toggle="collapse" data-parent="#faq" href="#collapse-22" aria-expanded="false" aria-controls="collapse-22">
+              <strong>What references can you provide about your company?</strong>
+            </a>
+          </h4>
+        </div>
+        <div id="collapse-22" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-22">
+          <p>ToKenya.com is Better Business Bureau member in good standing and has been since 2001. We have been operational in Kenya for over 14 years. We have an extensive database of delighted clients gladly provided upon request.</p>
+        </div>
+      </div>
+    </div>  
   </body>
   </html>
 

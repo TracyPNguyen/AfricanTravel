@@ -22,115 +22,157 @@
     margin-right: auto;
     margin-left: auto;
 }
+
 .bgColor {
-  background-color: rgb(240, 240, 240)
+  background-color: rgb(240, 240, 240);
+}
+.bgColorWhite {
+  background-color: white;
+}
+li.text_color
+{
+  color: white;
+}
+.navbarColor {
+  background-color: white;
+  color: rgba(71, 18, 1, 0.849);
+}
+<!--
+  -->                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+  .view-content {
+    clear: both;
+}
+div.text_align_center
+{
+  text-align: center;
 }
 
+div.align_center
+{
+  align-content: center;
+}
+.tour-preview {
+    padding: 0;
+    margin-left: .5%;
+    margin-right: .5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    text-align: left;
+    background: #fff;
+    position: relative;
+    vertical-align: bottom;
+    font-size: 90%;
+    font-family: open sans,Arial,Helvetica,sans-serif;
+}
+
+.tour-preview .tour-title {
+    font-weight: 400;
+    position: absolute;
+    overflow: hidden;
+    margin: 0;
+    font-size: .9em;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 1;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+.field-content:hover {
+  -ms-transform: scale(1.05); /* IE 9 */
+  -webkit-transform: scale(1.05); /* Safari 3-8 */
+  transform: scale(1.05);
+}
+.navbar-nav li:hover>.dropdown-menu {
+  display: block;
+}
 </style>
 </head>
 
 <body class="bgColor" style="height:1500px;">
 
-  <nav class="navbar navbar-fixed-top">
-    <div id="navbar">
-      <nav class="navbar navbar-default navbar-static-top" role="navigation">
-        <div class="navbar-header bgColor" >
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          </button>
-          <a href="Home.html" title=""><img src="./Images/logo.png" href="http:\\google.com" /></a>
-        </div>
-        <div class="collapse navbar-collapse" id="navbar-collapse-1" style="background-color: rgba(71, 18, 1, 0.849)">
-          <ul class="nav navbar-nav">
-            <!-- <li class="active"><a href="#">Active Link</a></li> -->
-            <li><a href="Home.html">HOME</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">DESTINATIONS <b class="caret"></b></a> 
-              <ul class="dropdown-menu">
-                <li class="kopie"><a href="#">Dropdown</a></li>
-                <li><a href="#">Dropdown Link 1</a></li>
-                <li class="active"><a href="#">Dropdown Link 2</a></li>
-                <li><a href="#">Dropdown Link 3</a></li>
-                <li class="dropdown dropdown-submenu">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown Link 4</a>
-                  <ul class="dropdown-menu">
-                    <li class="kopie"><a href="#">Dropdown Link 4</a></li>
-                    <li><a href="#">Dropdown Submenu Link 4.1</a></li>
-                    <li><a href="#">Dropdown Submenu Link 4.2</a></li>
-                    <li><a href="#">Dropdown Submenu Link 4.3</a></li>
-                    <li><a href="#">Dropdown Submenu Link 4.4</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown dropdown-submenu">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown Link 5</a>
-                  <ul class="dropdown-menu">
-                    <li class="kopie"><a href="#">Dropdown Link 5</a></li>
-                    <li><a href="#">Dropdown Submenu Link 5.1</a></li>
-                    <li><a href="#">Dropdown Submenu Link 5.2</a></li>
-                    <li><a href="#">Dropdown Submenu Link 5.3</a></li>
-                    <li class="dropdown dropdown-submenu">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown Submenu Link 5.4</a>
-                      <ul class="dropdown-menu">
-                        <li class="kopie"><a href="#">Dropdown Submenu Link 5.4</a></li>
-                        <li><a href="#">Dropdown Submenu Link 5.4.1</a></li>
-                        <li><a href="#">Dropdown Submenu Link 5.4.2</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">SAFARIS<b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li class="kopie"><a href="#">Dropdown2</a></li>
-                <li><a href="#">Dropdown2 Link 1</a></li>
-                <li><a href="#">Dropdown2 Link 2</a></li>
-                <li><a href="#">Dropdown2 Link 3</a></li>
-                <li class="dropdown dropdown-submenu">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown2 Link 4</a>
-                  <ul class="dropdown-menu">
-                    <li class="kopie"><a href="#">Dropdown2 Link 4</a></li>
-                    <li><a href="#">Dropdown2 Submenu Link 4.1</a></li>
-                    <li><a href="#">Dropdown2 Submenu Link 4.2</a></li>
-                    <li><a href="#">Dropdown2 Submenu Link 4.3</a></li>
-                    <li><a href="#">Dropdown2 Submenu Link 4.4</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown dropdown-submenu">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown2 Link 5</a>
-                  <ul class="dropdown-menu">
-                    <li class="kopie"><a href="#">Dropdown Link 5</a></li>
-                    <li><a href="#">Dropdown2 Submenu Link 5.1</a></li>
-                    <li><a href="#">Dropdown2 Submenu Link 5.2</a></li>
-                    <li><a href="#">Dropdown2 Submenu Link 5.3</a></li>
-                    <li class="dropdown dropdown-submenu">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown Submenu Link 5.4</a>
-                      <ul class="dropdown-menu">
-                        <li class="kopie"><a href="#">Dropdown2 Submenu Link 5.4</a></li>
-                        <li><a href="#">Dropdown2 Submenu Link 5.4.1</a></li>
-                        <li><a href="#">Dropdown2 Submenu Link 5.4.2</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li><a href="About.html">ABOUT</a></li>
-          </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-      </nav>
-    </div>
-  </nav>
 
-  <div class="container_carousel" style="margin-top:50px">  
-    ABOUT
+    <nav class="navbar navbar-fixed-top">
+        <div id="navbar">
+          <nav class="navbar navbar-default navbar-static-top" role="navigation">
+            <div class="navbar-header bgColorWhite" >
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              </button>
+              <a href="Home.html" title="Home page"><img src="./Images/african_Travel.jpg" style="width:200px;height:70px"/></a>
+            </div>
+            <div class="collapse navbar-collapse navbarColor" id="navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                      <!-- <li ><a href="Home.html" style="color:white;">HOME</a></li> -->
+                <li style="margin-top:10px; width:150px;"></li>
+                <li class="dropdown" style="margin-top:10px; text-align: right; ">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:rgba(37, 6, 6, 0.904);">DESTINATIONS<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li class="kopie"><a href="Kenya.html">Kenya</a></li>
+                      <li class="kopie"><a href="Tanzania.html">Tanzania</a></li>
+                      <li class="kopie"><a href="Zanzibar.html">Zanzibar</a></li>
+                    </ul>
+                  </li>
+                <li class="dropdown" style="margin-top:10px">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:rgba(37, 6, 6, 0.904);"> SAFARIS<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li class="kopie"><a href="#">07 - Days Karibu Kenya</a></li>
+                    <li class="kopie"><a href="#">08 - Days Samburu/Mara</a></li>
+                    <li class="kopie"><a href="#">08 - Days Tanzania Classic</a></li>
+                    <li class="kopie"><a href="#">09 - Days Savannah & Beach</a></li>
+                    <li class="kopie"><a href="#">09 - Days Wings over Kenya</a></li>
+                    <li class="kopie"><a href="#">10 - Days Treasures of Africa Kenya & Tanzania</a></li>
+                    <li class="kopie"><a href="#">12 - Days Kenya & Tanzania</a></li>
+                  </ul>
+                </li>
+                <li style="margin-top:10px"><a href="FAQ.html"  style="color:rgba(37, 6, 6, 0.904);">FAQ</a></li>
+                <li style="margin-top:10px"><a href="About.html" style="color:rgba(37, 6, 6, 0.904);">ABOUT US</a></li>
+                <li style="margin-top:10px"><a href="TravelReviews.html" style="color:rgba(37, 6, 6, 0.904);">REVIEWS</a></li>
+                <li style="margin-top:10px"><a href="Login.html"  style="color:rgba(37, 6, 6, 0.904);">AGENT LOGIN</a></li>
+                <li style="vertical-align: bottom; margin-top: 20px;"><img style="width:100px; height:30px;" src="./Images/Homepage/InquireNow.jpg" href="InquireNow.html" ></img></li>
+                <li style="vertical-align: bottom; margin-top: 20px; width: 50px; text-align: right;"><img style="width:30px; height:30px;"src="./Images/search.jpg" href="Search.html" ></img></li>
+              </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+          </nav>
+        </div>
+      </nav>
+  <div class="container_carousel" style="margin-top:100px;">  
+        </div>
+  <h2>ABOUT OUR SAFARIS:</h2>
+
+  <div style="margin-top:100px"> 
   </div>
-  
+  <div style="margin-top:50px; margin-left: 100px;">
+      <div>
+          <!-- <h4 class="panel-title panel-title--no-left-padding">              
+            <strong>ABOUT OUR SAFARIS:</strong>
+          </h4> -->
+        <p></p><p></p><p></p><p></p><p></p>
+        <p><b>Arrivals and departures :</b></p>
+        <p>A typical safari starts with arrival to a gateway city. This may be Jomo Kenyatta International Airport in Nairobi or Kilimanjaro International Airport near Arusha. Often, the first night is spent in the city giving the holiday-makers time to refresh after their long flight. However, there are also people who arrive in the early morning after an overnight flight and want to get to the bush straight away. At the end of the trip, there may be the need for an overnight room in a city hotel because the departure is in the early morning. Or, if departure is in the late evening, clients may wish to have a day room to relax and refresh. 
+        </p>
+        <p><b>Excursions:</b></p>
+        <p>A great way to enhance a safari experience is to add an excursion at the beginning or end of the safari. These can include visits to cultural and historical sites as well as meals at some of East Africa’s best restaurants.  
+        </p>
+        <p><b>Private safaris</b></p>
+        <p> Private safaris are custom tailored for the specific interests of the participants with a bit more flexibility in decisions such as start times of game drives. They operate with a minimum of 02 passengers.The touring is flexible and passenger can amend the program to spend more or less time at places of interest. 
+        </p>
+        <p><b>Fly-in safaris</b></p>
+        <p>These safaris depend on travel between places by aircraft. Generally, transfers and activities in the park are provided by the camp or lodge in shared use vehicles. The aircraft used is often 12 or 13 seat aeroplanes such as a Cessna Grand Caravan. Luggage allowances on these flights are generally limited to a maximum of 15 kilograms in soft sided bags.
+        
+        <p><b>Road safaris </b></p>
+        <p>Safaris by road are by road and almost always in our vehicles. This means you get the exclusive use of the vehicle on safari and the driver-guide is with you throughout the part of the trip in that particular country.
+        
+        <p><b>Fly-drive safaris (Safaris by air and road)</b></p>
+        <p>These programmes have a combination of driving and flying and may spend part or all of the time in our vehicles. The flight is usually a time saving measure at the beginning or end of the adventure to avoid retracing ground that has already been driven over. However, sometimes part of the trip is by road in our vehicle and then another part is by air and then uses the lodge or camp’s vehicle.
+        </p>
+      </div>
+  </div>
   </body>
   </html>
 
